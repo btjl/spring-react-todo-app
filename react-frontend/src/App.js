@@ -1,10 +1,17 @@
 import './App.css';
+import ListTodosComponent from './components/ListTodosComponent';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div className="container">
-      Hello World
-    </div>
+    <BrowserRouter>
+      <div className="container">
+        <Routes>
+          <Route exact path="/" element={<ListTodosComponent/>}/>
+          <Route path="/todos" element={<ListTodosComponent/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
