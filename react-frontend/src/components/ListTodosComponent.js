@@ -23,11 +23,11 @@ const ListTodosComponent = () => {
 
   return (
     <div className="container">
-      <h2 className="text-center">List Todos</h2>
+      <h2 className="text-center">Todos</h2>
       <table className="table table-bordered table-striped">
         <thead>
-          <th>Todo Id</th>
-          <th>Todo Name</th> 
+          <th>Id</th>
+          <th>Name</th> 
         </thead>
         <tbody>
           {
